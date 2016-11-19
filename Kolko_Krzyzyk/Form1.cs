@@ -88,7 +88,7 @@ namespace Kolko_Krzyzyk
             /*
              Kolejność:
              1. Wygraj gre
-             2. Zablokuj X
+             2. Zablokuj Xasd
              3. Wstaw w róg
              4. Wstaw w wolne miejsce
              */
