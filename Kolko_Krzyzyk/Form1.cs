@@ -219,14 +219,14 @@ namespace Kolko_Krzyzyk
                     x_licznik.Text = (Int32.Parse(x_licznik.Text) + 1).ToString();
                 }
 
-                MessageBox.Show(wygrany + " wygrał!");
+                MessageBox.Show(wygrany + " wygrał!", "Wygrana!");
                 blokowaniePrzyciskow();
             }
             else
             {
                 if (gra.ileRuchow == 9)
                 {
-                    MessageBox.Show("Remis", "aaa");
+                    MessageBox.Show("Remis", "BOOM!");
                     remis_licznik.Text = (Int32.Parse(remis_licznik.Text) + 1).ToString();
                 }
             }
