@@ -59,12 +59,15 @@ namespace Kolko_Krzyzyk
                 {
                     if (gra.ruch)
                     {
+                        O_X.Text = "O";
                         b.Text = "X";
                         gra.plansza[liczba - 1] = 1;
                         gra.ruch = !gra.ruch;
                     }
                     else
                     {
+                        
+                        O_X.Text = "X";
                         b.Text = "O";
                         gra.ruch = !gra.ruch;
                         gra.plansza[liczba - 1] = 2;
@@ -246,6 +249,7 @@ namespace Kolko_Krzyzyk
         private void NowaGra()
         {
             gra.ruch = true;
+            O_X.Text = "X";
             int i;
             for (i = 0; i < 9; i++) gra.plansza[i] = i + 3;
             gra.ileRuchow = 0;
@@ -304,6 +308,7 @@ namespace Kolko_Krzyzyk
         {
             NowaGra();
         }
+
 
         
 

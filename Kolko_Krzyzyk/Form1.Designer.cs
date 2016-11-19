@@ -52,6 +52,8 @@
             this.g1 = new System.Windows.Forms.TextBox();
             this.g2 = new System.Windows.Forms.TextBox();
             this.NG = new System.Windows.Forms.Button();
+            this.WykonanieRuchu = new System.Windows.Forms.Label();
+            this.O_X = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,7 +64,7 @@
             this.pomocToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(517, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(685, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -249,7 +251,7 @@
             // reset_licznik
             // 
             this.reset_licznik.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.reset_licznik.Location = new System.Drawing.Point(306, 448);
+            this.reset_licznik.Location = new System.Drawing.Point(386, 284);
             this.reset_licznik.Name = "reset_licznik";
             this.reset_licznik.Size = new System.Drawing.Size(111, 39);
             this.reset_licznik.TabIndex = 16;
@@ -279,19 +281,41 @@
             // NG
             // 
             this.NG.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.NG.Location = new System.Drawing.Point(164, 448);
+            this.NG.Location = new System.Drawing.Point(386, 207);
             this.NG.Name = "NG";
-            this.NG.Size = new System.Drawing.Size(100, 39);
+            this.NG.Size = new System.Drawing.Size(111, 39);
             this.NG.TabIndex = 19;
             this.NG.Text = "Nowa Gra";
             this.NG.UseVisualStyleBackColor = true;
             this.NG.Click += new System.EventHandler(this.NG_Click);
             // 
+            // WykonanieRuchu
+            // 
+            this.WykonanieRuchu.AutoSize = true;
+            this.WykonanieRuchu.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.WykonanieRuchu.Location = new System.Drawing.Point(381, 136);
+            this.WykonanieRuchu.Name = "WykonanieRuchu";
+            this.WykonanieRuchu.Size = new System.Drawing.Size(164, 25);
+            this.WykonanieRuchu.TabIndex = 20;
+            this.WykonanieRuchu.Text = "Ruch wykonuje:";
+            // 
+            // O_X
+            // 
+            this.O_X.AutoSize = true;
+            this.O_X.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.O_X.Location = new System.Drawing.Point(551, 121);
+            this.O_X.Name = "O_X";
+            this.O_X.Size = new System.Drawing.Size(43, 42);
+            this.O_X.TabIndex = 21;
+            this.O_X.Text = "X";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(517, 497);
+            this.ClientSize = new System.Drawing.Size(685, 497);
+            this.Controls.Add(this.O_X);
+            this.Controls.Add(this.WykonanieRuchu);
             this.Controls.Add(this.NG);
             this.Controls.Add(this.g2);
             this.Controls.Add(this.g1);
@@ -350,6 +374,8 @@
         protected System.Windows.Forms.TextBox g2;
         private System.Windows.Forms.ToolStripMenuItem graczVsKomputerToolStripMenuItem;
         private System.Windows.Forms.Button NG;
+        private System.Windows.Forms.Label WykonanieRuchu;
+        private System.Windows.Forms.Label O_X;
 
     }
 }
