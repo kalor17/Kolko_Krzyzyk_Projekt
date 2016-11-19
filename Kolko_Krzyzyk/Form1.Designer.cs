@@ -31,6 +31,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.plikToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nowaGraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.graczVsKomputerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.wyjścieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pomocToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.oProgramieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,7 +51,7 @@
             this.reset_licznik = new System.Windows.Forms.Button();
             this.g1 = new System.Windows.Forms.TextBox();
             this.g2 = new System.Windows.Forms.TextBox();
-            this.graczVsKomputerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.NG = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,6 +82,13 @@
             this.nowaGraToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.nowaGraToolStripMenuItem.Text = "Nowa gra";
             this.nowaGraToolStripMenuItem.Click += new System.EventHandler(this.nowaGraToolStripMenuItem_Click);
+            // 
+            // graczVsKomputerToolStripMenuItem
+            // 
+            this.graczVsKomputerToolStripMenuItem.Name = "graczVsKomputerToolStripMenuItem";
+            this.graczVsKomputerToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.graczVsKomputerToolStripMenuItem.Text = "Gracz vs Komputer";
+            this.graczVsKomputerToolStripMenuItem.Click += new System.EventHandler(this.graczVsKomputerToolStripMenuItem_Click);
             // 
             // wyjścieToolStripMenuItem
             // 
@@ -241,7 +249,7 @@
             // reset_licznik
             // 
             this.reset_licznik.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.reset_licznik.Location = new System.Drawing.Point(164, 446);
+            this.reset_licznik.Location = new System.Drawing.Point(306, 448);
             this.reset_licznik.Name = "reset_licznik";
             this.reset_licznik.Size = new System.Drawing.Size(111, 39);
             this.reset_licznik.TabIndex = 16;
@@ -268,18 +276,23 @@
             this.g2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.g2.TextChanged += new System.EventHandler(this.g2_TextChanged);
             // 
-            // graczVsKomputerToolStripMenuItem
+            // NG
             // 
-            this.graczVsKomputerToolStripMenuItem.Name = "graczVsKomputerToolStripMenuItem";
-            this.graczVsKomputerToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
-            this.graczVsKomputerToolStripMenuItem.Text = "Gracz vs Komputer";
-            this.graczVsKomputerToolStripMenuItem.Click += new System.EventHandler(this.graczVsKomputerToolStripMenuItem_Click);
+            this.NG.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.NG.Location = new System.Drawing.Point(164, 448);
+            this.NG.Name = "NG";
+            this.NG.Size = new System.Drawing.Size(100, 39);
+            this.NG.TabIndex = 19;
+            this.NG.Text = "Nowa Gra";
+            this.NG.UseVisualStyleBackColor = true;
+            this.NG.Click += new System.EventHandler(this.NG_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(517, 497);
+            this.Controls.Add(this.NG);
             this.Controls.Add(this.g2);
             this.Controls.Add(this.g1);
             this.Controls.Add(this.reset_licznik);
@@ -336,6 +349,7 @@
         protected System.Windows.Forms.TextBox g1;
         protected System.Windows.Forms.TextBox g2;
         private System.Windows.Forms.ToolStripMenuItem graczVsKomputerToolStripMenuItem;
+        private System.Windows.Forms.Button NG;
 
     }
 }

@@ -300,6 +300,11 @@ namespace Kolko_Krzyzyk
             g2.Text = "Komputer";
         }
 
+        private void NG_Click(object sender, EventArgs e)
+        {
+            NowaGra();
+        }
+
         
 
         
