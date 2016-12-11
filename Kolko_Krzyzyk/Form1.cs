@@ -237,6 +237,7 @@ namespace Kolko_Krzyzyk
         private void blokowaniePrzyciskow()
         {
             P1.Enabled = false;
+            P1.BackColor = System.Drawing.Color.Purple;
             P9.Enabled = false;
             P2.Enabled = false;
             P3.Enabled = false;

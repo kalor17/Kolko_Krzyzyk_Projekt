@@ -49,5 +49,31 @@ namespace Kolko_Krzyzyk
             
             return a;
         }
+
+        public string Malowanie()
+        {
+            string a = "r";
+            //Sprawdzanie poziomoa
+            if ((plansza[0]== plansza[1]) && (plansza[1]==plansza[2])) a="po1";
+            else
+            if ((plansza[3] == plansza[4]) && (plansza[4] == plansza[5])) a = "po2";
+            else
+            if ((plansza[6] == plansza[7]) && (plansza[7] == plansza[8])) a = "po3";
+            else
+
+            //Sprawdzanie pionowo
+            if ((plansza[0] == plansza[3]) && (plansza[3] == plansza[6])) a = "pi4";
+            else
+            if ((plansza[1] == plansza[4]) && (plansza[4] == plansza[7])) a = "pi4";
+            else
+            if ((plansza[2] == plansza[5]) && (plansza[5] == plansza[8])) a = "pi4";
+            else
+
+            //Sprawdzanie przekątnych
+            if ((plansza[0] == plansza[4]) && (plansza[4] == plansza[8])) a = "pr1";
+            else
+            if ((plansza[6] == plansza[4]) && (plansza[4] == plansza[2])) a = "pr2";
+            return a;
+        }
     }
 }
