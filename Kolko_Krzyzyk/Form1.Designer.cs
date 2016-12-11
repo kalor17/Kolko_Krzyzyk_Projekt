@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.plikToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nowaGraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -59,6 +60,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.plikToolStripMenuItem,
             this.pomocToolStripMenuItem});
@@ -75,27 +77,27 @@
             this.graczVsKomputerToolStripMenuItem,
             this.wyjścieToolStripMenuItem});
             this.plikToolStripMenuItem.Name = "plikToolStripMenuItem";
-            this.plikToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
+            this.plikToolStripMenuItem.Size = new System.Drawing.Size(34, 20);
             this.plikToolStripMenuItem.Text = "Plik";
             // 
             // nowaGraToolStripMenuItem
             // 
             this.nowaGraToolStripMenuItem.Name = "nowaGraToolStripMenuItem";
-            this.nowaGraToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.nowaGraToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.nowaGraToolStripMenuItem.Text = "Nowa gra";
             this.nowaGraToolStripMenuItem.Click += new System.EventHandler(this.nowaGraToolStripMenuItem_Click);
             // 
             // graczVsKomputerToolStripMenuItem
             // 
             this.graczVsKomputerToolStripMenuItem.Name = "graczVsKomputerToolStripMenuItem";
-            this.graczVsKomputerToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.graczVsKomputerToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.graczVsKomputerToolStripMenuItem.Text = "Gracz vs Komputer";
             this.graczVsKomputerToolStripMenuItem.Click += new System.EventHandler(this.graczVsKomputerToolStripMenuItem_Click);
             // 
             // wyjścieToolStripMenuItem
             // 
             this.wyjścieToolStripMenuItem.Name = "wyjścieToolStripMenuItem";
-            this.wyjścieToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.wyjścieToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.wyjścieToolStripMenuItem.Text = "Wyjście";
             this.wyjścieToolStripMenuItem.Click += new System.EventHandler(this.wyjścieToolStripMenuItem_Click);
             // 
@@ -104,13 +106,13 @@
             this.pomocToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.oProgramieToolStripMenuItem});
             this.pomocToolStripMenuItem.Name = "pomocToolStripMenuItem";
-            this.pomocToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
+            this.pomocToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.pomocToolStripMenuItem.Text = "Pomoc";
             // 
             // oProgramieToolStripMenuItem
             // 
             this.oProgramieToolStripMenuItem.Name = "oProgramieToolStripMenuItem";
-            this.oProgramieToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.oProgramieToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.oProgramieToolStripMenuItem.Text = "O programie";
             this.oProgramieToolStripMenuItem.Click += new System.EventHandler(this.oProgramieToolStripMenuItem_Click);
             // 
@@ -207,6 +209,7 @@
             // remis
             // 
             this.remis.AutoSize = true;
+            this.remis.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.remis.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.remis.Location = new System.Drawing.Point(175, 379);
             this.remis.MaximumSize = new System.Drawing.Size(101, 24);
@@ -220,6 +223,7 @@
             // x_licznik
             // 
             this.x_licznik.AutoSize = true;
+            this.x_licznik.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.x_licznik.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.x_licznik.Location = new System.Drawing.Point(109, 416);
             this.x_licznik.Name = "x_licznik";
@@ -231,6 +235,7 @@
             // remis_licznik
             // 
             this.remis_licznik.AutoSize = true;
+            this.remis_licznik.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.remis_licznik.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.remis_licznik.Location = new System.Drawing.Point(211, 416);
             this.remis_licznik.Name = "remis_licznik";
@@ -241,6 +246,7 @@
             // o_licznik
             // 
             this.o_licznik.AutoSize = true;
+            this.o_licznik.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.o_licznik.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.o_licznik.Location = new System.Drawing.Point(321, 416);
             this.o_licznik.Name = "o_licznik";
@@ -292,6 +298,7 @@
             // WykonanieRuchu
             // 
             this.WykonanieRuchu.AutoSize = true;
+            this.WykonanieRuchu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.WykonanieRuchu.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.WykonanieRuchu.Location = new System.Drawing.Point(381, 136);
             this.WykonanieRuchu.Name = "WykonanieRuchu";
@@ -302,6 +309,7 @@
             // O_X
             // 
             this.O_X.AutoSize = true;
+            this.O_X.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.O_X.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.O_X.Location = new System.Drawing.Point(551, 121);
             this.O_X.Name = "O_X";
@@ -313,6 +321,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(685, 497);
             this.Controls.Add(this.O_X);
             this.Controls.Add(this.WykonanieRuchu);

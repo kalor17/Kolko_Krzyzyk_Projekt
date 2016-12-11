@@ -25,7 +25,7 @@ namespace Kolko_Krzyzyk
         public bool CzyWygrana()
         {
             bool a = false;
-            //Sprawdzanie poziomo
+            //Sprawdzanie poziomoa
             if ((plansza[0]== plansza[1]) && (plansza[1]==plansza[2])) a=true;
             else
             if ((plansza[3] == plansza[4]) && (plansza[4] == plansza[5])) a = true;
