@@ -268,6 +268,37 @@ namespace Kolko_Krzyzyk
                 P8.BackColor = System.Drawing.Color.Purple;
                 P9.BackColor = System.Drawing.Color.Purple;
             }
+            if (gra.Malowanie() == "pi1")
+            {
+                P1.BackColor = System.Drawing.Color.Purple;
+                P4.BackColor = System.Drawing.Color.Purple;
+                P7.BackColor = System.Drawing.Color.Purple;
+            }
+            if (gra.Malowanie() == "pi2")
+            {
+                P2.BackColor = System.Drawing.Color.Purple;
+                P5.BackColor = System.Drawing.Color.Purple;
+                P8.BackColor = System.Drawing.Color.Purple;
+            }
+            if (gra.Malowanie() == "pi3")
+            {
+                P3.BackColor = System.Drawing.Color.Purple;
+                P6.BackColor = System.Drawing.Color.Purple;
+                P9.BackColor = System.Drawing.Color.Purple;
+            }
+            if (gra.Malowanie() == "pr1")
+            {
+                P1.BackColor = System.Drawing.Color.Purple;
+                P5.BackColor = System.Drawing.Color.Purple;
+                P9.BackColor = System.Drawing.Color.Purple;
+            }
+            if (gra.Malowanie() == "pr2")
+            {
+                P3.BackColor = System.Drawing.Color.Purple;
+                P5.BackColor = System.Drawing.Color.Purple;
+                P7.BackColor = System.Drawing.Color.Purple;
+            }
+
         }
 
 

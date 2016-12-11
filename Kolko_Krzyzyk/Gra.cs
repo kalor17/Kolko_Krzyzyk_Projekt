@@ -62,11 +62,11 @@ namespace Kolko_Krzyzyk
             else
 
             //Sprawdzanie pionowo
-            if ((plansza[0] == plansza[3]) && (plansza[3] == plansza[6])) a = "pi4";
+            if ((plansza[0] == plansza[3]) && (plansza[3] == plansza[6])) a = "pi1";
             else
-            if ((plansza[1] == plansza[4]) && (plansza[4] == plansza[7])) a = "pi4";
+            if ((plansza[1] == plansza[4]) && (plansza[4] == plansza[7])) a = "pi2";
             else
-            if ((plansza[2] == plansza[5]) && (plansza[5] == plansza[8])) a = "pi4";
+            if ((plansza[2] == plansza[5]) && (plansza[5] == plansza[8])) a = "pi3";
             else
 
             //Sprawdzanie przekątnych
