@@ -61,6 +61,7 @@ namespace Kolko_Krzyzyk
                     {
                         O_X.Text = "O";
                         b.Text = "X";
+                        b.ForeColor = System.Drawing.Color.Red;
                         gra.plansza[liczba - 1] = 1;
                         gra.ruch = !gra.ruch;
                     }
@@ -69,6 +70,7 @@ namespace Kolko_Krzyzyk
                         
                         O_X.Text = "X";
                         b.Text = "O";
+                        b.ForeColor = System.Drawing.Color.Blue;
                         gra.ruch = !gra.ruch;
                         gra.plansza[liczba - 1] = 2;
                     }
