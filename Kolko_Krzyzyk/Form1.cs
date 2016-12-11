@@ -223,6 +223,7 @@ namespace Kolko_Krzyzyk
 
                 MessageBox.Show(wygrany + " wygrał!", "Wygrana!");
                 blokowaniePrzyciskow();
+                malowanieWygranego();
             }
             else
             {
@@ -237,7 +238,6 @@ namespace Kolko_Krzyzyk
         private void blokowaniePrzyciskow()
         {
             P1.Enabled = false;
-            P1.BackColor = System.Drawing.Color.Purple;
             P9.Enabled = false;
             P2.Enabled = false;
             P3.Enabled = false;
@@ -246,6 +246,28 @@ namespace Kolko_Krzyzyk
             P6.Enabled = false;
             P7.Enabled = false;
             P8.Enabled = false;
+        }
+
+        private void malowanieWygranego()
+        {
+            if (gra.Malowanie() == "po1")
+            {
+                P1.BackColor = System.Drawing.Color.Purple;
+                P2.BackColor = System.Drawing.Color.Purple;
+                P3.BackColor = System.Drawing.Color.Purple;
+            }
+            if (gra.Malowanie() == "po2")
+            {
+                P4.BackColor = System.Drawing.Color.Purple;
+                P5.BackColor = System.Drawing.Color.Purple;
+                P6.BackColor = System.Drawing.Color.Purple;
+            }
+            if (gra.Malowanie() == "po3")
+            {
+                P7.BackColor = System.Drawing.Color.Purple;
+                P8.BackColor = System.Drawing.Color.Purple;
+                P9.BackColor = System.Drawing.Color.Purple;
+            }
         }
 
 
@@ -265,6 +287,15 @@ namespace Kolko_Krzyzyk
             P7.Enabled = true;
             P8.Enabled = true;
             P9.Enabled = true;
+            P1.BackColor = System.Drawing.Color.Silver;
+            P2.BackColor = System.Drawing.Color.Silver;
+            P3.BackColor = System.Drawing.Color.Silver;
+            P4.BackColor = System.Drawing.Color.Silver;
+            P5.BackColor = System.Drawing.Color.Silver;
+            P6.BackColor = System.Drawing.Color.Silver;
+            P7.BackColor = System.Drawing.Color.Silver;
+            P8.BackColor = System.Drawing.Color.Silver;
+            P9.BackColor = System.Drawing.Color.Silver;
             P1.Text = "";
             P2.Text = "";
             P3.Text = "";
