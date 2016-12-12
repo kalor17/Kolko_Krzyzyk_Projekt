@@ -30,7 +30,7 @@ namespace Kolko_Krzyzyk
 
         private void oProgramieToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Karol W", "O programie");
+            MessageBox.Show("Karol Wiśniewski\nŁukasz Zakrzewski", "O programie");
         }
 
         private void wyjścieToolStripMenuItem_Click(object sender, EventArgs e)
