@@ -304,6 +304,8 @@ namespace Kolko_Krzyzyk
 
         private void NowaGra()
         {
+            /* powrót wszystkiego do stanu początkowego*/
+             
             gra.ustawRuch(true);
             O_X.Text = "X";
             int i;
