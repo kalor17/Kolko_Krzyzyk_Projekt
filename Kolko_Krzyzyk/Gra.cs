@@ -19,7 +19,7 @@ namespace Kolko_Krzyzyk
             ileRuchow = 0;
             plansza = new int[9];
             for (int i = 0; i < 9; i++)
-                plansza[i]=i+3;
+                plansza[i]=i+3;  //wstawienie do planszy losowych liczb różnych od 1 i 2
         }
 
         public bool CzyWygrana()

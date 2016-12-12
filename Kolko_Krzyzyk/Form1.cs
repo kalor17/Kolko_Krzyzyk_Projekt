@@ -47,7 +47,7 @@ namespace Kolko_Krzyzyk
         {
             Button b = (Button)sender;
             string nazwa = b.Name;
-            int liczba = (int)Char.GetNumericValue(nazwa[1]);
+            int liczba = (int)Char.GetNumericValue(nazwa[1]); 
 
             if ((g1.Text == "Gracz 1") || (g2.Text == "Gracz 2"))
             {
