@@ -9,7 +9,7 @@ namespace Kolko_Krzyzyk
     class Gra
     {
         public bool ruch;
-        public int ileRuchow;
+        private int ileRuchow;
         public int[] plansza;
         public bool czy_komputer = true;
 
@@ -74,6 +74,20 @@ namespace Kolko_Krzyzyk
             else
             if ((plansza[6] == plansza[4]) && (plansza[4] == plansza[2])) a = "pr2";
             return a;
+        }
+
+        public int getIleRuchow()
+        {
+            return ileRuchow;
+        }
+
+        public void zwiekszRuch()
+        {
+            ileRuchow++;
+        }
+        public void zerujRuch()
+        {
+            ileRuchow = 0;
         }
     }
 }

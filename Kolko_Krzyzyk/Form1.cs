@@ -75,7 +75,7 @@ namespace Kolko_Krzyzyk
                         gra.plansza[liczba - 1] = 2;
                     }
 
-                    gra.ileRuchow++;
+                    gra.zwiekszRuch();
 
                     Wygrana();
 
@@ -227,7 +227,7 @@ namespace Kolko_Krzyzyk
             }
             else
             {
-                if (gra.ileRuchow == 9)
+                if (gra.getIleRuchow() == 9)
                 {
                     MessageBox.Show("Remis", "BOOM!");
                     remis_licznik.Text = (Int32.Parse(remis_licznik.Text) + 1).ToString();
@@ -308,7 +308,7 @@ namespace Kolko_Krzyzyk
             O_X.Text = "X";
             int i;
             for (i = 0; i < 9; i++) gra.plansza[i] = i + 3;
-            gra.ileRuchow = 0;
+            gra.zerujRuch();
             P1.Enabled = true;
             P2.Enabled = true;
             P3.Enabled = true;
