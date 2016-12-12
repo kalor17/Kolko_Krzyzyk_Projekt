@@ -82,7 +82,7 @@ namespace Kolko_Krzyzyk
                    
                 }
             }
-            if ((!gra.getRuch()) && (gra.czy_komputer))
+            if ((!gra.getRuch()) && (gra.getRuchKomputer()))
             {
                 komputer_ruch();
             }
@@ -364,9 +364,9 @@ namespace Kolko_Krzyzyk
         protected void g2_TextChanged(object sender, EventArgs e)
         {
             if (g2.Text.ToUpper() == "KOMPUTER")
-                gra.czy_komputer = true;
+                gra.setRuchKomputer(true);
             else
-                gra.czy_komputer = false;
+                gra.setRuchKomputer(false);
         }
 
         protected void graczVsKomputerToolStripMenuItem_Click(object sender, EventArgs e)

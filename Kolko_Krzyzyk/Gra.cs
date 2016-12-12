@@ -11,7 +11,7 @@ namespace Kolko_Krzyzyk
         private bool ruch;
         private int ileRuchow;
         public int[] plansza;
-        public bool czy_komputer = true;
+        private bool czy_komputer = true;
 
         public Gra()
         {
@@ -103,6 +103,16 @@ namespace Kolko_Krzyzyk
         public void ustawRuch(bool ruch)
         {
             this.ruch = ruch;
+        }
+
+        public bool getRuchKomputer()
+        {
+            return czy_komputer;
+        }
+
+        public void setRuchKomputer(bool czy_komputer)
+        {
+            this.czy_komputer = czy_komputer;
         }
     }
 }
