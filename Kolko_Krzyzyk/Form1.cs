@@ -62,7 +62,7 @@ namespace Kolko_Krzyzyk
                         O_X.Text = "O";
                         b.Text = "X";
                         b.ForeColor = System.Drawing.Color.Red;
-                        gra.plansza[liczba - 1] = 1;
+                        gra.setPlansza(liczba-1,1);
                         gra.zmienRuch();
                     }
                     else
@@ -72,7 +72,7 @@ namespace Kolko_Krzyzyk
                         b.Text = "O";
                         b.ForeColor = System.Drawing.Color.Blue;
                         gra.zmienRuch();
-                        gra.plansza[liczba - 1] = 2;
+                        gra.setPlansza(liczba-1,2);
                     }
 
                     gra.zwiekszRuch();
@@ -313,7 +313,7 @@ namespace Kolko_Krzyzyk
             gra.ustawRuch(true);
             O_X.Text = "X";
             int i;
-            for (i = 0; i < 9; i++) gra.plansza[i] = i + 3;
+            for (i = 0; i < 9; i++) gra.setPlansza(i,i+3);
             gra.zerujRuch();
             P1.Enabled = true;
             P2.Enabled = true;
