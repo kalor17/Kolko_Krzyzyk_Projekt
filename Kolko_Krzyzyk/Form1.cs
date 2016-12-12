@@ -19,8 +19,17 @@ namespace Kolko_Krzyzyk
             InitializeComponent();
     
         }
+        #region Przyciski funkcyjne
+        private void NG_Click(object sender, EventArgs e)
+        {
+            NowaGra();
+        }
+        
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
 
-    
 
         
         private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -42,7 +51,9 @@ namespace Kolko_Krzyzyk
         {
             NowaGra();
         }
+        #endregion
 
+        #region Przycisk na planszy
         private void button_click(object sender, EventArgs e)
         {
             Button b = (Button)sender;
@@ -87,7 +98,9 @@ namespace Kolko_Krzyzyk
                 komputer_ruch();
             }
         }
+        #endregion
 
+        #region Ruch komputera
         private void komputer_ruch()
         {
             /*
@@ -208,7 +221,9 @@ namespace Kolko_Krzyzyk
             }//end if
             return null;
         }
+        #endregion
 
+        #region Operacje po wygranej
         private void Wygrana()
         {
             if (gra.CzyWygrana())
@@ -304,8 +319,9 @@ namespace Kolko_Krzyzyk
             }
 
         }
+        #endregion
 
-
+        #region Nowa gra
         private void NowaGra()
         {
             /* powrót wszystkiego do stanu początkowego*/
@@ -343,7 +359,9 @@ namespace Kolko_Krzyzyk
             P8.Text = "";
             P9.Text = "";
         }
+        #endregion
 
+        #region Liczniki, gracze i pozostale operacje
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -374,21 +392,12 @@ namespace Kolko_Krzyzyk
             g1.Text = "Gracz 1";
             g2.Text = "Komputer";
         }
-
-        private void NG_Click(object sender, EventArgs e)
-        {
-            NowaGra();
-        }
-
-        private void buttonExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+        #endregion
 
 
-        
 
-        
-        
+
+
+
     }
 }
