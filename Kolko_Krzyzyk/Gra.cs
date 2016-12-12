@@ -21,7 +21,7 @@ namespace Kolko_Krzyzyk
             for (int i = 0; i < 9; i++)
                 plansza[i]=i+3;  //wstawienie do planszy losowych liczb różnych od 1 i 2
         }
-
+        #region Sprawdzanie wygranych
         public bool CzyWygrana()
         {
             bool a = false;
@@ -49,7 +49,9 @@ namespace Kolko_Krzyzyk
             
             return a;
         }
+        #endregion
 
+        #region Warunek malowania
         public string Malowanie()
         {
             string a = "r";
@@ -74,8 +76,10 @@ namespace Kolko_Krzyzyk
             else
             if ((plansza[6] == plansza[4]) && (plansza[4] == plansza[2])) a = "pr2";
             return a;
+        
         }
-
+        #endregion
+        #region Operacje na zmiennych
         public int getIleRuchow()
         {
             return ileRuchow;
@@ -119,5 +123,6 @@ namespace Kolko_Krzyzyk
         {
             this.plansza[liczba] = wartosc;
         }
+#endregion
     }
 }
