@@ -57,13 +57,13 @@ namespace Kolko_Krzyzyk
             {
                 if (b.Text == "")
                 {
-                    if (gra.ruch)
+                    if (gra.getRuch())
                     {
                         O_X.Text = "O";
                         b.Text = "X";
                         b.ForeColor = System.Drawing.Color.Red;
                         gra.plansza[liczba - 1] = 1;
-                        gra.ruch = !gra.ruch;
+                        gra.zmienRuch();
                     }
                     else
                     {
@@ -71,7 +71,7 @@ namespace Kolko_Krzyzyk
                         O_X.Text = "X";
                         b.Text = "O";
                         b.ForeColor = System.Drawing.Color.Blue;
-                        gra.ruch = !gra.ruch;
+                        gra.zmienRuch();
                         gra.plansza[liczba - 1] = 2;
                     }
 
@@ -82,7 +82,7 @@ namespace Kolko_Krzyzyk
                    
                 }
             }
-            if ((!gra.ruch) && (gra.czy_komputer))
+            if ((!gra.getRuch()) && (gra.czy_komputer))
             {
                 komputer_ruch();
             }
@@ -210,7 +210,7 @@ namespace Kolko_Krzyzyk
             if (gra.CzyWygrana())
             {
                 String wygrany = "";
-                if (gra.ruch)
+                if (gra.getRuch())
                 {
                     wygrany = g2.Text;
                     o_licznik.Text = (Int32.Parse(o_licznik.Text) + 1).ToString();
@@ -304,7 +304,7 @@ namespace Kolko_Krzyzyk
 
         private void NowaGra()
         {
-            gra.ruch = true;
+            gra.ustawRuch(true);
             O_X.Text = "X";
             int i;
             for (i = 0; i < 9; i++) gra.plansza[i] = i + 3;

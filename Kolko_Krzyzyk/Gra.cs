@@ -8,7 +8,7 @@ namespace Kolko_Krzyzyk
 {
     class Gra
     {
-        public bool ruch;
+        private bool ruch;
         private int ileRuchow;
         public int[] plansza;
         public bool czy_komputer = true;
@@ -83,11 +83,26 @@ namespace Kolko_Krzyzyk
 
         public void zwiekszRuch()
         {
-            ileRuchow++;
+            this.ileRuchow++;
         }
         public void zerujRuch()
         {
-            ileRuchow = 0;
+            this.ileRuchow = 0;
+        }
+
+        public bool getRuch()
+        {
+            return ruch;
+        }
+
+        public void zmienRuch()
+        {
+            this.ruch = !ruch;
+        }
+
+        public void ustawRuch(bool ruch)
+        {
+            this.ruch = ruch;
         }
     }
 }
