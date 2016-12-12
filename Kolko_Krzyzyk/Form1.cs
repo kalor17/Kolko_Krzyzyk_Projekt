@@ -91,6 +91,7 @@ namespace Kolko_Krzyzyk
         private void komputer_ruch()
         {
             /*
+             Wykorzystanie gotowego algorytmu dla gry z komputerem:
              Kolejność:
              1. Wygraj gre
              2. Zablokuj X
@@ -117,6 +118,7 @@ namespace Kolko_Krzyzyk
 
         private Button wygraj_zablokuj(string s)
         {
+            //zwracanie przycisku dla wygrania lub zablokowania
             // Szukanie poziomo
             if ((P1.Text == s) && (P2.Text == s) && (P3.Text == "")) return P3;
             if ((P1.Text == s) && (P3.Text == s) && (P2.Text == "")) return P2;
@@ -156,6 +158,7 @@ namespace Kolko_Krzyzyk
         }
         private Button wstaw_rog()
         {
+            // zwrocenie przycisku dla rogów
             if (P1.Text == "O")
             {
                 if (P3.Text == "") return P3;
@@ -192,6 +195,7 @@ namespace Kolko_Krzyzyk
         }
         private Button wolne_miejsce()
         {
+            // wyszukanie wolnego miejsca do wstawienia przez komputer
             Button b = null;
             foreach (Control c in Controls)
             {
