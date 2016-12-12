@@ -55,6 +55,7 @@
             this.NG = new System.Windows.Forms.Button();
             this.WykonanieRuchu = new System.Windows.Forms.Label();
             this.O_X = new System.Windows.Forms.Label();
+            this.buttonExit = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,27 +78,27 @@
             this.graczVsKomputerToolStripMenuItem,
             this.wyjścieToolStripMenuItem});
             this.plikToolStripMenuItem.Name = "plikToolStripMenuItem";
-            this.plikToolStripMenuItem.Size = new System.Drawing.Size(34, 20);
+            this.plikToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
             this.plikToolStripMenuItem.Text = "Plik";
             // 
             // nowaGraToolStripMenuItem
             // 
             this.nowaGraToolStripMenuItem.Name = "nowaGraToolStripMenuItem";
-            this.nowaGraToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
+            this.nowaGraToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.nowaGraToolStripMenuItem.Text = "Nowa gra";
             this.nowaGraToolStripMenuItem.Click += new System.EventHandler(this.nowaGraToolStripMenuItem_Click);
             // 
             // graczVsKomputerToolStripMenuItem
             // 
             this.graczVsKomputerToolStripMenuItem.Name = "graczVsKomputerToolStripMenuItem";
-            this.graczVsKomputerToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
+            this.graczVsKomputerToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.graczVsKomputerToolStripMenuItem.Text = "Gracz vs Komputer";
             this.graczVsKomputerToolStripMenuItem.Click += new System.EventHandler(this.graczVsKomputerToolStripMenuItem_Click);
             // 
             // wyjścieToolStripMenuItem
             // 
             this.wyjścieToolStripMenuItem.Name = "wyjścieToolStripMenuItem";
-            this.wyjścieToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
+            this.wyjścieToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.wyjścieToolStripMenuItem.Text = "Wyjście";
             this.wyjścieToolStripMenuItem.Click += new System.EventHandler(this.wyjścieToolStripMenuItem_Click);
             // 
@@ -106,13 +107,13 @@
             this.pomocToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.oProgramieToolStripMenuItem});
             this.pomocToolStripMenuItem.Name = "pomocToolStripMenuItem";
-            this.pomocToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
+            this.pomocToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
             this.pomocToolStripMenuItem.Text = "Pomoc";
             // 
             // oProgramieToolStripMenuItem
             // 
             this.oProgramieToolStripMenuItem.Name = "oProgramieToolStripMenuItem";
-            this.oProgramieToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.oProgramieToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.oProgramieToolStripMenuItem.Text = "O programie";
             this.oProgramieToolStripMenuItem.Click += new System.EventHandler(this.oProgramieToolStripMenuItem_Click);
             // 
@@ -256,12 +257,12 @@
             // 
             // reset_licznik
             // 
-            this.reset_licznik.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.reset_licznik.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.reset_licznik.Location = new System.Drawing.Point(386, 284);
             this.reset_licznik.Name = "reset_licznik";
             this.reset_licznik.Size = new System.Drawing.Size(111, 39);
             this.reset_licznik.TabIndex = 16;
-            this.reset_licznik.Text = "Reset";
+            this.reset_licznik.Text = "Reset wyniku";
             this.reset_licznik.UseVisualStyleBackColor = true;
             this.reset_licznik.Click += new System.EventHandler(this.reset_licznik_Click);
             // 
@@ -317,6 +318,17 @@
             this.O_X.TabIndex = 21;
             this.O_X.Text = "X";
             // 
+            // buttonExit
+            // 
+            this.buttonExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonExit.Location = new System.Drawing.Point(512, 379);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(134, 55);
+            this.buttonExit.TabIndex = 22;
+            this.buttonExit.Text = "Wyjście";
+            this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -324,6 +336,7 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(685, 497);
+            this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.O_X);
             this.Controls.Add(this.WykonanieRuchu);
             this.Controls.Add(this.NG);
@@ -386,6 +399,7 @@
         private System.Windows.Forms.Button NG;
         private System.Windows.Forms.Label WykonanieRuchu;
         private System.Windows.Forms.Label O_X;
+        private System.Windows.Forms.Button buttonExit;
 
     }
 }

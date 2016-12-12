@@ -380,6 +380,11 @@ namespace Kolko_Krzyzyk
             NowaGra();
         }
 
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
 
         
 
